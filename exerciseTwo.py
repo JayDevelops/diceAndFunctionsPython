@@ -62,3 +62,58 @@ dice5SidesInput = int(input("\nPlease input a number to roll a dice until this n
 dice5RollsInput = int(input("Please input a number to rolls this amount of times: "))
 
 dice5(dice5SidesInput, dice5RollsInput)
+
+# Only prints out heads or tail
+def dice6(sides, rolls):
+    # Starting at 0, the index
+    index = 0
+
+    # Default the sides to 2 now
+    sides = 2
+    if rolls != 0:
+        while rolls >= index:
+            # From 1 - 2
+            number = random.randrange(1, 3)
+            if number == 1:
+                print("You landed on heads")
+            else:
+                print("You landed on tails")
+            index += 1
+    else:
+        number = random.randrange(1, 3)
+        if number == 1:
+            print("You landed on heads")
+        else:
+            print("You landed on tails")
+
+dice6SidesInput = int(input("\n\nPlease input a number to roll a this specific number: "))
+dice6RollsInput = int(input("\nPlease input a number to roll a this one until this number: "))
+dice6(dice6SidesInput, dice6RollsInput)
+
+
+# Only returns the string, doesn't print it out
+def dice7(arg):
+    # Starting at 0, the index
+    index = 0
+
+    # Default the sides to 2 now
+    sides = 2
+    if rolls != 0:
+        while rolls >= index:
+            # From 1 - 2
+            number = random.randrange(1, 3)
+            if number == 1:
+                return "You landed on heads"
+            else:
+                return "You landed on tails"
+            index += 1
+    else:
+        number = random.randrange(1, 3)
+        if number == 1:
+            return "You landed on heads"
+        else:
+            return "You landed on tails"
+
+dice7idesInput = int(input("\n\nPlease input a number to roll a this specific number: "))
+dice7RollsInput = int(input("\nPlease input a number to roll a this one until this number: "))
+dice6(dice7SidesInput, dice7RollsInput)
